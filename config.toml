@@ -1,3 +1,5 @@
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "VEX PROS Coding Style"
+baseurl = "http://github.org/StandsForSomething/pros-coding-style"
 languageCode = "en-us"
+theme = "docuapi"
+canonifyURLs = true
