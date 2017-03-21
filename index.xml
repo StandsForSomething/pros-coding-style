@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VEX PROS Coding Style</title>
-    <link>http://github.org/StandsForSomething/pros-coding-style/index.xml</link>
+    <link>https://standsforsomething.github.io/pros-coding-style/index.xml</link>
     <description>Recent content on VEX PROS Coding Style</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://github.org/StandsForSomething/pros-coding-style/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://standsforsomething.github.io/pros-coding-style/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://github.org/StandsForSomething/pros-coding-style/introduction/</link>
+      <link>https://standsforsomething.github.io/pros-coding-style/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://github.org/StandsForSomething/pros-coding-style/introduction/</guid>
+      <guid>https://standsforsomething.github.io/pros-coding-style/introduction/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -36,10 +36,10 @@ apropriate changes depending on what&amp;rsquo;s changed and the size of the fil
     
     <item>
       <title></title>
-      <link>http://github.org/StandsForSomething/pros-coding-style/comments/</link>
+      <link>https://standsforsomething.github.io/pros-coding-style/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://github.org/StandsForSomething/pros-coding-style/comments/</guid>
+      <guid>https://standsforsomething.github.io/pros-coding-style/comments/</guid>
       <description>
 
 &lt;h1 id=&#34;comments&#34;&gt;comments&lt;/h1&gt;
