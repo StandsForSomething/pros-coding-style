@@ -1,5 +1,5 @@
 title = "VEX PROS Coding Style"
-baseurl = "http://github.org/StandsForSomething/pros-coding-style"
+baseurl = "https://standsforsomething.github.io/pros-coding-style/"
 languageCode = "en-us"
 theme = "docuapi"
 canonifyURLs = true
