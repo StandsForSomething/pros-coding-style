@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>VEX PROS Coding Style</title>
+    <title> - VEX PROS Coding Style</title>
     <meta name="generator" content="Hugo 0.18" />
 
     
     <meta name="description" content="a style guide for C programming">
     
-    <link rel="canonical" href="https://standsforsomething.github.io/pros-coding-style/">
+    <link rel="canonical" href="https://standsforsomething.github.io/pros-coding-style/comments/">
     
     <meta name="author" content="SFS Stands For Something">
     
 
-    <meta property="og:url" content="https://standsforsomething.github.io/pros-coding-style/">
+    <meta property="og:url" content="https://standsforsomething.github.io/pros-coding-style/comments/">
     <meta property="og:title" content="VEX PROS Coding Style">
     <meta property="og:image" content="https://standsforsomething.github.io/pros-coding-style/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="VEX PROS Coding Style">
@@ -69,9 +69,6 @@
     <script src="https://standsforsomething.github.io/pros-coding-style/javascripts/modernizr.js"></script>
 
     
-    <link href="https://standsforsomething.github.io/pros-coding-style/index.xml" rel="alternate" type="application/rss+xml" title="VEX PROS Coding Style" />
-    <link href="https://standsforsomething.github.io/pros-coding-style/index.xml" rel="feed" type="application/rss+xml" title="VEX PROS Coding Style" />
-    
 
   </head>
   <body class="palette-primary-blue palette-accent-grey">
@@ -97,7 +94,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        VEX PROS Coding Style
+        
       </div>
     </div>
 
@@ -180,11 +177,14 @@
 
 
 
-<a  title="Comments" href="https://standsforsomething.github.io/pros-coding-style/comments/">
+<a class="current" title="Comments" href="https://standsforsomething.github.io/pros-coding-style/comments/">
 	
 	Comments
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -221,7 +221,69 @@
 
 	<article class="article">
 		<div class="wrapper">
+			<h1> </h1>
+
 			
+
+<h1 id="comments">comments</h1>
+
+<p>comments are very important to makeing sure code is clear and readable.
+Ig you&rsquo;re working on a project alone. don&rsquo;t comment, take a break, then come
+back after even as soon as week later you maybe spend a hour or so trying to
+figure out what you&rsquo;ve already done if you don&rsquo;t use comments. Comments are even
+more important if you are working with multiple programmers, if you can read
+your own code without comments, then others certainly can&rsquo;t.  the following
+outlines how to effectivly use comments.</p>
+
+<h2 id="how-to-comment">how to comment</h2>
+
+<h2 id="when-and-what-to-comment">when and what to comment</h2>
+
+<blockquote>
+<p>in the below example there&rsquo;s to many comments and they all explain what&rsquo;s
+already clear just by looking at the code.</p>
+</blockquote>
+
+<pre><code class="language-C">//infinite loop
+while(1) {
+    //loop 10 times
+    for(int i = 0; i &lt; 10; i++) {
+        //run foo with i + x as the argument
+        foo(i + x);
+
+        //run bar
+        bar();
+    }
+
+    //run barfoo
+    barfoo(5);
+
+}
+</code></pre>
+
+<blockquote>
+<p>in this example instead of explaining each line of code and what it does,
+comments just breifly expain why certain code is there.
+comments just breifly expain why certain code is there.</p>
+</blockquote>
+
+<pre><code class="language-C">while(1) {
+    //in order to obtain correct readings foo must be run 10 times
+    for(int i = 0; i &lt; 10; i++)
+        foo(i + x);
+        bar();
+    }
+
+    //make sure the retro encabulator is callibrated to 5
+    barfoo(5);
+
+}
+</code></pre>
+
+<p>When writing comments explain breifly what the code is for but don&rsquo;t go into
+detail about how it works.  If a comment takes up for than 2 lines it&rsquo;s probally
+to long (with the exception of headers and doxygen comments).</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -233,6 +295,32 @@
 
 			<footer class="footer">
 				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://standsforsomething.github.io/pros-coding-style/" title="VEX PROS Coding Style">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              VEX PROS Coding Style
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
 
 
 
