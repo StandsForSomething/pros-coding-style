@@ -10,6 +10,32 @@
     
     <item>
       <title></title>
+      <link>https://standsforsomething.github.io/pros-coding-style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://standsforsomething.github.io/pros-coding-style/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;This webpage is designed to outline a few simple guidelines that should be
+followed by anyone maintaining C code for a KIDS Inc Robotics VEX robot.&lt;/p&gt;
+
+&lt;p&gt;Coding style varies from person to person, but anyone maintining code for a KIDS
+Inc robot must follow these guidelines.&lt;/p&gt;
+
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;
+
+&lt;p&gt;changes may be made to these guidelines. If a commit to the git repositories is
+more trivial than a change in wording, grammer corrections, or corrections in
+spelling errors should be tagged and the version of these guidelines being used
+in a given file should be noted (it&amp;rsquo;s not allways reasonable to make all the
+apropriate changes depending on what&amp;rsquo;s changed and the size of the file).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://standsforsomething.github.io/pros-coding-style/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
