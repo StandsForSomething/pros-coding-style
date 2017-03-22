@@ -1,126 +1,309 @@
-<!doctype html>
-<html>
-<head>
-	<meta name="generator" content="Hugo 0.18" />
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
     <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>VEX PROS Coding Style</title>
-    <link href='https://standsforsomething.github.io/pros-coding-style/slate/stylesheets/monokai.css' rel="stylesheet" media="screen" />
-<link href='https://standsforsomething.github.io/pros-coding-style/slate/stylesheets/screen.css' rel="stylesheet" media="screen" />
-<link href='https://standsforsomething.github.io/pros-coding-style/slate/stylesheets/print.css' rel="stylesheet" media="print" />
+    <meta name="generator" content="Hugo 0.18" />
 
     
-<script src='https://standsforsomething.github.io/pros-coding-style/slate/javascripts/all_nosearch.js'></script>
+    <meta name="description" content="a style guide for C programming">
+    
+    <link rel="canonical" href="https://standsforsomething.github.io/pros-coding-style/">
+    
+    <meta name="author" content="SFS Stands For Something">
+    
+
+    <meta property="og:url" content="https://standsforsomething.github.io/pros-coding-style/">
+    <meta property="og:title" content="VEX PROS Coding Style">
+    <meta property="og:image" content="https://standsforsomething.github.io/pros-coding-style/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="VEX PROS Coding Style">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://standsforsomething.github.io/pros-coding-style/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://standsforsomething.github.io/pros-coding-style/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://standsforsomething.github.io/pros-coding-style/fonts/icon.eot');
+        src: url('https://standsforsomething.github.io/pros-coding-style/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://standsforsomething.github.io/pros-coding-style/fonts/icon.woff')
+               format('woff'),
+             url('https://standsforsomething.github.io/pros-coding-style/fonts/icon.ttf')
+               format('truetype'),
+             url('https://standsforsomething.github.io/pros-coding-style/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://standsforsomething.github.io/pros-coding-style/stylesheets/application.css">
+    <link rel="stylesheet" href="https://standsforsomething.github.io/pros-coding-style/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://standsforsomething.github.io/pros-coding-style/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://standsforsomething.github.io/pros-coding-style/stylesheets/highlight/highlight.css">
 
     
-</head>
-<body class="index" data-languages="">
-    <a href="#" id="nav-button">
-        <span>
-        NAV
-        <img src='https://standsforsomething.github.io/pros-coding-style/slate/images/navbar.png'/>
-      </span>
-    </a>
-    <div class="tocify-wrapper">
-        <img src='https://standsforsomething.github.io/pros-coding-style/images/logo.png' />
-         
-        
-        <div id="toc">
-        </div>
-         
-        
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://standsforsomething.github.io/pros-coding-style/javascripts/modernizr.js"></script>
+
+    
+    <link href="https://standsforsomething.github.io/pros-coding-style/index.xml" rel="alternate" type="application/rss+xml" title="VEX PROS Coding Style" />
+    <link href="https://standsforsomething.github.io/pros-coding-style/index.xml" rel="feed" type="application/rss+xml" title="VEX PROS Coding Style" />
+    
+
+  </head>
+  <body class="palette-primary-blue palette-accent-grey">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
     </div>
-    <div class="page-wrapper">
-        <div class="dark-box"></div>
-        <div class="content">
-            
-    
-        
-
-<h1 id="introduction">Introduction</h1>
-
-<p>This webpage is designed to outline a few simple guidelines that should be
-followed by anyone maintaining C code for a KIDS Inc Robotics VEX robot.</p>
-
-<p>Coding style varies from person to person, but anyone maintining code for a KIDS
-Inc robot must follow these guidelines.</p>
-
-<h2 id="changes">Changes</h2>
-
-<p>changes may be made to these guidelines. If a commit to the git repositories is
-more trivial than a change in wording, grammer corrections, or corrections in
-spelling errors should be tagged and the version of these guidelines being used
-in a given file should be noted (it&rsquo;s not allways reasonable to make all the
-apropriate changes depending on what&rsquo;s changed and the size of the file).</p>
-
-    
-        
-
-<h1 id="comments">comments</h1>
-
-<p>comments are very important to makeing sure code is clear and readable.
-Ig you&rsquo;re working on a project alone. don&rsquo;t comment, take a break, then come
-back after even as soon as week later you maybe spend a hour or so trying to
-figure out what you&rsquo;ve already done if you don&rsquo;t use comments. Comments are even
-more important if you are working with multiple programmers, if you can read
-your own code without comments, then others certainly can&rsquo;t.  the following
-outlines how to effectivly use comments.</p>
-
-<h2 id="how-to-comment">how to comment</h2>
-
-<h2 id="when-and-what-to-comment">when and what to comment</h2>
-
-<blockquote>
-<p>in the below example there&rsquo;s to many comments and they all explain what&rsquo;s
-already clear just by looking at the code.</p>
-</blockquote>
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">//infinite loop</span>
-<span style="color: #66d9ef">while</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #75715e">//loop 10 times</span>
-    <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #75715e">//run foo with i + x as the argument</span>
-        <span style="color: #f8f8f2">foo(i</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">x);</span>
-
-        <span style="color: #75715e">//run bar</span>
-        <span style="color: #f8f8f2">bar();</span>
-    <span style="color: #f8f8f2">}</span>
-
-    <span style="color: #75715e">//run barfoo</span>
-    <span style="color: #f8f8f2">barfoo(</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">);</span>
-
-<span style="color: #f8f8f2">}</span>
-</pre></div>
-
-<blockquote>
-<p>in this example instead of explaining each line of code and what it does,
-comments just breifly expain why certain code is there.
-comments just breifly expain why certain code is there.</p>
-</blockquote>
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">while</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #75715e">//in order to obtain correct readings foo must be run 10 times</span>
-    <span style="color: #66d9ef">for</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">10</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
-        <span style="color: #f8f8f2">foo(i</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">x);</span>
-        <span style="color: #f8f8f2">bar();</span>
-    <span style="color: #f8f8f2">}</span>
-
-    <span style="color: #75715e">//make sure the retro encabulator is callibrated to 5</span>
-    <span style="color: #f8f8f2">barfoo(</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">);</span>
-
-<span style="color: #f8f8f2">}</span>
-</pre></div>
-
-<p>When writing comments explain breifly what the code is for but don&rsquo;t go into
-detail about how it works.  If a comment takes up for than 2 lines it&rsquo;s probally
-to long (with the exception of headers and doxygen comments).</p>
+    <div class="stretch">
+      <div class="title">
+        VEX PROS Coding Style
+      </div>
+    </div>
 
     
 
-        </div>
-        <div class="dark-box">
-            
-        </div>
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/standsforsomething" title="@standsforsomething on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
     </div>
     
-</body>
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://standsforsomething.github.io/pros-coding-style/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://standsforsomething.github.io/pros-coding-style/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>VEX PROS Coding Style <span class="version">1.0.0</span></strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Introduction" href="https://standsforsomething.github.io/pros-coding-style/">
+	
+	Introduction
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Comments" href="https://standsforsomething.github.io/pros-coding-style/comments/">
+	
+	Comments
+</a>
+
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/standsforsomething" target="_blank" title="@standsforsomething on GitHub">
+              @standsforsomething on GitHub
+            </a>
+          </li>
+          
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://standsforsomething.github.io/pros-coding-style/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
 </html>
+
