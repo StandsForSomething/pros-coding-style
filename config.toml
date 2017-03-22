@@ -1,13 +1,56 @@
-title = "VEX PROS Coding Style"
 baseurl = "https://standsforsomething.github.io/pros-coding-style/"
 languageCode = "en-us"
-theme = "docuapi"
-canonifyURLs = true
+title = "VEX PROS Coding Style"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
 
-# Code higlighting settings
-pygmentsCodefences = true
-pygmentsCodeFencesGuesSsyntax = false
-pygmentsOptions = ""
-pygmentsStyle = "monokai"
-# The monokai stylesheet is included in the base template.
-wpygmentsUseClasses = true
+[params]
+	# General information
+	author = "SFS Stands For Something"
+	description = "a style guide for C programming"
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "blue"
+    	accent  = "grey"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	github  = "standsforsomething"
+
+
+[[menu.main]]
+	name   = "Introduction"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Comments"
+	url    = "comments/"
+	weight = 10
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
